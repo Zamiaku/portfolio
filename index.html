@@ -16,24 +16,24 @@
       <nav>
         <div class="personal__logo">Christian Graham</div>
         <ul class="nav__link--list">
-          <li>
-            <a
-              href=""
-              class="nav__link--anchor link__hover--effect link__hover--effect--black"
+          <li class="nav__link">
+          <a
+          href=""
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >languages</a
             >
           </li>
-          <li>
+          <li class="nav__link">
             <a
               href=""
-              class="nav__link--anchor link__hover--effect link__hover--effect--black"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >projects</a
             >
           </li>
-          <li>
+          <li class="nav__link">
             <a
               href=""
-              class="nav__link--anchor--primary link__hover--effect link__hover--effect--primary"
+              class="nav__link--anchor--primary nav__link--anchor-primary"
               >contact</a
             >
           </li>
@@ -192,7 +192,7 @@
 
                     </h4>
                     <p class="project__description--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla praesentium quibusdam assumenda ad? Ratione, quas pariatur quam mollitia sapiente iusto magnam laborum. Fuga, nihil temporibus earum adipisci et voluptatum illum!</p>
-                    <div class="project__description--link">
+                    <div class="project__description--links">
                       <a href="https://www.github.com/yourlink" target="_blank" class="project__description--link">
                     <i class="fab fa-github"></i>
                       <a href="https://www.yourwebsite.com" target="_blank" class="project__description--link">
@@ -253,38 +253,42 @@
       </div>
     </section>
     <footer>
-      <div class="row">
-        <a href="#">
-          <figure>
+      <div class="row footer__row">
+        <a href="#" class="footer__anchor">
+          <figure class="footer__logo">
             <img src="./assets/assets/logo.svg" class= "footer__logo--img" alt="">
           </figure>
+          <span class="footer__logo--popper">
+            top 
+            <i class="fas fa-arrow-up"></i>
+          </span>
         </a>
         <div class="footer__social--list">
           <a href="https://google.com" target="_blank" class="
-          footer__hover--link
+          footer__social--link
           link__hover-effect
           link__hover-effect--white
           " target="blank">Github</a>
           <a href="https://google.com" target="_blank" class="
-          footer__hover--link
+          footer__social--link
           link__hover-effect
           link__hover-effect--white
           " target="blank">Linkdin </a>
           <a href="mailto@email.com" target="_blank" class="
-          footer__hover--link
+          footer__social--link
           link__hover-effect
           link__hover-effect--white
           " target="blank">Email</a>
           <a href="./assets/assets/Example Resume.pdf" target="_blank" class="
-          footer__hover--link
+          footer__social--link
           link__hover-effect
           link__hover-effect--white
-          " target="blank">Resume</a>
+          " target="_blank">Resume</a>
+
+
           
-
-
-
         </div>
+        <div class="footer__copyright">Copyright © 2023 Christian Graham</div>
       </div>
     </footer>
   </body>
