@@ -34,6 +34,11 @@ p {
 a {
   text-decoration: none;
   position: relative;
+  transition: opacity 300ms ease;
+}
+
+a:hover {
+  opacity: 0.7;
 }
 
 .link__hover-effect:after {
@@ -182,9 +187,15 @@ nav {
   padding-top: 18px;
 }
 
+.about-me__info--title {
+  margin-bottom: 16px;
+  animation: fade-up 650ms 400ms backwards;
+}
+
 .about-me__info--para {
   font-size: 20px;
   margin-bottom: 28px;
+  animation: fade-up 650ms 600ms backwards;
 }
 
 .about-me__link {
@@ -193,7 +204,20 @@ nav {
   padding: 0 16px;
 }
 
+.about-me__links {
+  animation: fade-up 650ms 800ms backwards;
+}
 
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .about-me__img--container {
   flex: 1;
@@ -205,8 +229,36 @@ nav {
 
 .about-me__img {
   width: 100%;
+  animation: fade-in 1200ms 800ms backwards;
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.wave {
+  display: inline-block;
+animation: animate-wave 500ms infinite ease-in-out;
+}
+
+@keyframes animate-wave {
+  0% {
+    transform: rotate(0);
+
+  }
+  50% {
+    transform: rotate(30deg);
+
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 /* TECH -- stack  */
 
 .language__img {
@@ -434,10 +486,12 @@ footer {
   .project__description--para {
     display: none;
   }
+
   .project__description--links {
     display: flex;
     justify-content: center;
   }
+
   .project__description--title {
     font-size: 32px;
     line-height: 1;
